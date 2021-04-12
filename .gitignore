@@ -1,0 +1,10 @@
+# system
+.DS_Store
+.nova/
+
+# Unformatted system generated files
+*.css
+*.css.map
+
+# Backups
+*.bak
