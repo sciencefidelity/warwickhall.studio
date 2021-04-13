@@ -8,3 +8,6 @@
 
 # Backups
 *.bak
+
+# server
+.htaccess
