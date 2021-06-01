@@ -1,13 +1,17 @@
 # system
 .DS_Store
-.nova/
+.nova
 
-# Unformatted system generated files
+# generated
 *.css
 *.css.map
 
-# Backups
+# backups
 *.bak
 
 # server
 .htaccess
+
+# node
+node_modules
+*.log
