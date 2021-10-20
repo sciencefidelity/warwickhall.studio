@@ -1,11 +1,12 @@
 {
   "name": "warwickhall.studio",
-  "version": "1.0.0",
   "description": "Affordable art studios in Cardiff",
+  "version": "0.1.0",
   "main": "index.html",
   "repository": "git@github.com:sciencefidelity/warwickhall.studio.git",
-  "author": "sciencefidelity <32623301+sciencefidelity@users.noreply.github.com>",
-  "license": "UNLICENSED",
+  "author": "Matt Cook <matt@sciencefidelity.co.uk>",
+  "licence": "UNLICENCED",
+  "private": true,
   "scripts": {
     "build": "sass --style=compressed ./scss/style.scss ./css/style.css"
   },
