@@ -11,6 +11,6 @@
     "build": "sass --style=compressed ./scss/style.scss ./css/style.css"
   },
   "dependencies": {
-    "sass": "^1.44.0"
+    "sass": "^1.45.2"
   }
 }
