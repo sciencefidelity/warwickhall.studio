@@ -1,30 +1,32 @@
 ---
-// Component Imports
+// import "sanitize.css/sanitize.css"
+// import "sanitize.css/assets.css"
+// import "sanitize.css/reduce-motion.css"
+// import "sanitize.css/typography.css"
 import Content from "../components/Content.astro"
 import Footer from "../components/Footer.astro"
 import Header from "../components/Header.astro"
-const title = "Warwick Hall Studios | affordable artists studios in Cardiff"
 ---
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
-    <title>{title}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Warwick Hall Studios | affordable artists studios in Cardiff</title>
+    <meta name="Description" content="An artist led initiative providing good quality studio accommodation for artists and makers in Cardiff." />
+    <link rel="stylesheet" href={Astro.resolve('../styles/globals.scss')}>
+
+    <link rel="preload" href={Astro.resolve('../fonts/gtalpina-bold-sub.woff2')} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={Astro.resolve('../fonts/gtalpina-regular-lat.woff2')} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={Astro.resolve('../fonts/bananagrotesk-bold-sub.woff2')} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={Astro.resolve('../fonts/bananagrotesk-regular-lat.woff2')} as="font" type="font/woff2" crossorigin />
 
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
-    <link rel="stylesheet" href={Astro.resolve('sanitize.css/sanitize.css')}>
-    <link rel="stylesheet" href={Astro.resolve('sanitize.css/assets.css')}>
-    <link rel="stylesheet" href={Astro.resolve('sanitize.css/reduce-motion.css')}>
-    <link rel="stylesheet" href={Astro.resolve('sanitize.css/typography.css')}>
-    <link rel="stylesheet" href={Astro.resolve('../styles/global.css')}>
-
+    <meta name="theme-color" content="#1B1C1F" />
   </head>
-  <body>
 
+  <body>
     <Header />
     <Content />
     <Footer />
-
   </body>
 </html>

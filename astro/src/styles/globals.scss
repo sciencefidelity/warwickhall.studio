@@ -1,4 +1,3 @@
-@use 'normalize';
 @font-face {
   font-family: "GT Alpina";
   src: url(../fonts/gtalpina-bold-sub.woff2) format("woff2"),
@@ -10,7 +9,7 @@
 @font-face {
   font-family: "GT Alpina";
   src: url(../fonts/gtalpina-regular-lat.woff2) format("woff2"),
-       url(./fonts/gtalpina-regular-lat.woff) format("woff");
+       url(../fonts/gtalpina-regular-lat.woff) format("woff");
   font-weight: 400;
   font-size: normal;
   font-display: swap;
