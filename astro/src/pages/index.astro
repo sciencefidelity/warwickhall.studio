@@ -1,11 +1,9 @@
 ---
 // Component Imports
-import Tour from "../components/Tour.astro"
-import Header from "../components/Header.astro"
+import Content from "../components/Content.astro"
 import Footer from "../components/Footer.astro"
-
-// Component Script:
-let title = "My Astro Site"
+import Header from "../components/Header.astro"
+const title = "Warwick Hall Studios | affordable artists studios in Cardiff"
 ---
 <html lang="en">
   <head>
@@ -21,21 +19,11 @@ let title = "My Astro Site"
     <link rel="stylesheet" href={Astro.resolve('sanitize.css/typography.css')}>
     <link rel="stylesheet" href={Astro.resolve('../styles/global.css')}>
 
-    <style>
-      header {
-        display: flex;
-        flex-direction: column;
-        gap: 1em;
-        max-width: min(100%, 68ch);
-      }
-    </style>
   </head>
   <body>
 
     <Header />
-    <main>
-      <Tour />
-    </main>
+    <Content />
     <Footer />
 
   </body>
