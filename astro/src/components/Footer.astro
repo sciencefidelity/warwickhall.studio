@@ -7,5 +7,65 @@
 </footer>
 
 <style lang="scss">
+  .footer-container {
+    display: flex;
+    padding-top: 3rem;
+    margin: 0 11.5% 5rem 0;
+    border-top: 3px solid var(--light-blue);
+  }
 
+  .contact {
+    margin-top: 1rem;
+  }
+
+  .contact a {
+    color: var(--mint);
+  }
+
+  .address, .contact {
+    font-family: "Banana Grotesk",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+    text-align: right;
+  }
+
+  .contact-us {
+    flex: auto;
+  }
+
+  .fb-link {
+    height: 3rem;
+    margin-left: 11.5%;
+    margin-top: auto;
+  }
+
+  .fa-facebook {
+    height: 100%;
+  }
+
+  .fa-facebook path {
+    fill: var(--mint);
+  }
+
+  @media only screen and (min-width: 1421px) {
+    .fb-link {
+      height: 4.5rem;
+    }
+  }
+
+  @media only screen and (max-width: 887px) {
+    .footer-container {
+      margin: 0 11.5% 5rem 0;
+    }
+  }
+
+  @media only screen and (max-width: 467px) {
+    .footer-container {
+      margin: 0 5% 4rem 0;
+    }
+
+    .fb-link {
+      height: 2.5rem;
+      align-items: flex-end;
+      margin-left: 11.5%;
+    }
+  }
 </style>
