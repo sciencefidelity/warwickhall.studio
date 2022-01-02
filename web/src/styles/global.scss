@@ -1,6 +1,6 @@
-@use './foundation/colors';
-@use './foundation/typography';
-@use './foundation/breakpoints' as b;
+@use 'colors';
+@use 'typography';
+@use 'breakpoints' as b;
 
 html {
   font-family: "Banana Grotesk",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
