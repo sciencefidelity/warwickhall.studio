@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
-    "preview": "astro preview"
+    "preview": "astro preview",
+    "clean": "rm -rf dist"
   },
   "devDependencies": {
     "astro": "^0.22.3",
