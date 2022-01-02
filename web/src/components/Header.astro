@@ -1,7 +1,3 @@
----
-import { Markdown } from 'astro/components';
----
-
 <header class="site-header">
   <div class="hero-container">
     <picture>
@@ -13,9 +9,31 @@ import { Markdown } from 'astro/components';
 </header>
 
 <style lang="scss">
+  @use '../styles/foundation/breakpoints' as b;
+
   .hero-container {
     margin: 3rem 22% 0 0;
     height: 70vh;
+    @include b.mq(h) {
+      margin: 3rem 30% 0 0;
+    }
+    @include b.mq(g) {
+      margin: 3rem 11.5% 0 0;
+    }
+    @include b.mq(f) {
+      margin: 2rem 11.5% 0 0;
+    }
+    @include b.mq(e) {
+      height: 56vh;
+      margin: 1.5rem 11.5% 0 0;
+    }
+    @include b.mq(d) {
+      margin: 0 11.5% 0 0;
+    }
+    @include b.mq(c) {
+      height: 45vh;
+      margin: 0;
+    }
   }
 
   .hero-image {
@@ -23,43 +41,5 @@ import { Markdown } from 'astro/components';
     height: 100%;
     margin: auto;
     object-fit: cover;
-  }
-
-  @media only screen and (min-width: 1421px) {
-    .hero-container {
-      margin: 3rem 30% 0 0;
-    }
-  }
-
-  @media only screen and (max-width: 1099px) {
-    .hero-container {
-      margin: 3rem 11.5% 0 0;
-    }
-  }
-
-  @media only screen and (max-width: 887px) {
-    .hero-container {
-      margin: 2rem 11.5% 0 0;
-    }
-  }
-
-  @media only screen and (max-width: 714px) {
-    .hero-container {
-      height: 56vh;
-      margin: 1.5rem 11.5% 0 0;
-    }
-  }
-
-  @media only screen and (max-width: 600px) {
-    .hero-container {
-      margin: 0 11.5% 0 0;
-    }
-  }
-
-  @media only screen and (max-width: 467px) {
-    .hero-container {
-      height: 45vh;
-      margin: 0;
-    }
   }
 </style>

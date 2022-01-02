@@ -7,6 +7,8 @@
 </main>
 
 <style lang="scss">
+  @use '../styles/foundation/breakpoints' as b;
+
   .headline {
     background: var(--dark-blue);
     height: 11.5rem;
@@ -14,11 +16,50 @@
     margin-left: 22.5%;
     display: inline-block;
     margin-top: -5.75rem;
+    @include b.mq(h) {
+      height: 15rem;
+      margin-top: -7.5rem;
+    }
+    @include b.mq(f) {
+      width: 88%;
+      margin-left: 11.5%;
+    }
+    @include b.mq(e) {
+      height: 10.375rem;
+      margin-top: -5.15rem;
+    }
+    @include b.mq(d) {
+      height: 8.375rem;
+      margin-top: -4rem;
+    }
+    @include b.mq(c) {
+      height: 7.25rem;
+      margin-top: -3.5rem;
+      width: 94%;
+      margin-left: 6%;
+    }
+    @include b.mq(b) {
+      height: 6.5rem;
+      margin-top: -3.15rem;
+    }
+    @include b.mq(a) {
+      height: 5.5rem;
+      margin-top: -2.67rem;
+    }
   }
 
   .logo {
     letter-spacing: 0.15rem;
     padding: 0.75rem 1.5rem;
+    @include b.mq(h) {
+      padding: 0.75rem 2rem;
+    }
+    @include b.mq(c) {
+      padding: 0.375rem 1rem;
+    }
+    @include b.mq(b) {
+      padding: 0.5rem 1rem;
+    }
   }
 
   .tagline {
@@ -26,120 +67,48 @@
     font-weight: 700;
     text-align: right;
     color: var(--purple);
+    @include b.mq(h) {
+      padding-top: 2.5rem;
+    }
   }
 
   .main-container {
     margin: 0rem 16.5% 4rem 11.5%;
+    @include b.mq(h) {
+      margin: 0rem 20.5% 4rem 11.5%;
+    }
+    @include b.mq(f) {
+      margin: 0rem 11.5% 4rem 11.5%;
+    }
+    @include b.mq(c) {
+      margin: 0rem 6% 4rem 6%;
+    }
   }
 
   .body-text {
     padding-right: 27%;
     padding-top: 3rem;
-  }
-
-  @media only screen and (min-width: 1421px) {
-    .headline {
-      height: 15rem;
-      margin-top: -7.5rem;
-    }
-
-    .logo {
-      padding: .75rem 2rem;
-    }
-
-    .tagline {
-      padding-top: 2.5rem;
-    }
-
-    .main-container {
-      margin: 0rem 20.5% 4rem 11.5%;
-    }
-
-    .body-text {
+    @include b.mq(h) {
       padding-right: 23%;
     }
-  }
-
-  @media only screen and (max-width: 1099px) {
-    .body-text {
+    @include b.mq(g) {
       width: 100%;
     }
-  }
-
-  @media only screen and (max-width: 887px) {
-    .headline {
-      width: 88%;
-      margin-left: 11.5%;
-    }
-
-    .body-text {
+    @include b.mq(f) {
       padding-right: 0;
       padding-top: 3rem;
     }
-
-    .main-container {
-      margin: 0rem 11.5% 4rem 11.5%;
-    }
-  }
-
-  @media only screen and (max-width: 714px) {
-    .headline {
-      height: 10.375rem;
-      margin-top: -5.15rem;
-    }
-  }
-
-  @media only screen and (max-width: 600px) {
-    .headline {
-      height: 8.375rem;
-      margin-top: -4rem;
-    }
-  }
-
-  @media only screen and (max-width: 467px) {
-    .headline {
-      height: 7.25rem;
-      margin-top: -3.5rem;
-      width: 94%;
-      margin-left: 6%;
-    }
-
-    .logo {
-      padding: 0.375rem 1rem;
-    }
-
-    .body-text {
+    @include b.mq(c) {
       padding-top: 2.25rem;
     }
-
-    .main-container {
-      margin: 0rem 6% 4rem 6%;
-    }
-
-    .hide {
-      display: none;
-    }
-  }
-
-  @media only screen and (max-width: 376px) {
-    .headline {
-      height: 6.5rem;
-      margin-top: -3.15rem;
-    }
-
-    .logo {
-      padding: 0.5rem 1rem;
-    }
-
-    .body-text {
+    @include b.mq(b) {
       padding-top: 2rem;
     }
   }
 
-  @media only screen and (max-width: 320px) {
-    .headline {
-      height: 5.5rem;
-      margin-top: -2.67rem;
+  .hide {
+    @include b.mq(c) {
+      display: none;
     }
   }
 </style>
