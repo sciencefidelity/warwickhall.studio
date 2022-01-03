@@ -1,0 +1,19 @@
+{
+  "name": "@example/starter",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "astro": "^0.22.3",
+    "sass": "^1.45.2"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
+  }
+}
