@@ -1,6 +1,6 @@
 <script lang="ts">
-  import webp from "../assets/img/jess-studio.webp"
-  import jpeg from "../assets/img/jess-studio.jpg"
+  import webp from "/assets/img/jess-studio.webp"
+  import jpeg from "/assets/img/jess-studio.jpg"
 </script>
 
 <header class="site-header">
