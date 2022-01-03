@@ -1,9 +1,15 @@
 <header class="site-header">
   <div class="hero-container">
     <picture>
-      <source srcset="../assets/img/jess-studio.webp" type="image/webp">
-      <source srcset="../assets/img/jess-studio.jpg" type="image/jpeg">
-      <img class="hero-image" src="../assets/img/jess-studio.jpg" alt="" width="1200" height="800" />
+      <source srcset="../assets/img/jess-studio.webp" type="image/webp" />
+      <source srcset="../assets/img/jess-studio.jpg" type="image/jpeg" />
+      <img
+        class="hero-image"
+        src="../assets/img/jess-studio.jpg"
+        alt=""
+        width="1200"
+        height="800"
+      />
     </picture>
   </div>
 </header>
@@ -13,8 +19,8 @@
   @use '../styles/breakpoints' as b;
 
   .hero-container {
-    margin: 3rem 22% 0 0;
     height: 70vh;
+    margin: 3rem 22% 0 0;
     @include b.mq(g) {
       margin: 3rem 11.5% 0 0;
     }

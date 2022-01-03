@@ -1,8 +1,28 @@
 <footer class="site-footer">
   <div class="footer-container">
-    <div class="fb-link"><a href="https://www.facebook.com/WarwickHallStudiosCardiff" target="_blank" rel="noreferrer"><svg class="fa-facebook" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" alt="link to facebook"><path fill="currentColor" d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg><span class="screen-reader-text">Like us on Facebook</span></a></div>
-    <div class="contact-us"><p class="address">Banastre Avenue<br>Cardiff CF14 3NR</p>
-    <p class="contact"><a href="mailto:hello@warwickhall.studio">hello@warwickhall.studio</a></div>
+    <div class="fb-link">
+      <a
+        href="https://www.facebook.com/WarwickHallStudiosCardiff"
+        target="_blank"
+        rel="noreferrer"
+        ><svg
+          class="fa-facebook"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 320 512"
+          alt="link to facebook"
+          ><path
+            fill="currentColor"
+            d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
+          /></svg
+        ><span class="screen-reader-text">Like us on Facebook</span></a
+      >
+    </div>
+    <div class="contact-us">
+      <p class="address">Banastre Avenue<br />Cardiff CF14 3NR</p>
+      <p class="contact">
+        <a href="mailto:hello@warwickhall.studio">hello@warwickhall.studio</a>
+      </p>
+    </div>
   </div>
 </footer>
 
@@ -31,8 +51,18 @@
     color: var(--mint);
   }
 
-  .address, .contact {
-    font-family: "Banana Grotesk",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+  .address,
+  .contact {
+    font-family:
+      'Banana Grotesk',
+      -apple-system,
+      BlinkMacSystemFont,
+      'Segoe UI',
+      Roboto,
+      'Helvetica Neue',
+      Arial,
+      'Noto Sans',
+      sans-serif;
     text-align: right;
   }
 
@@ -42,11 +72,11 @@
 
   .fb-link {
     height: 3rem;
-    margin-left: 11.5%;
     margin-top: auto;
+    margin-left: 11.5%;
     @include b.mq(c) {
-      height: 2.5rem;
       align-items: flex-end;
+      height: 2.5rem;
       margin-left: 11.5%;
     }
     @media only screen and (min-width: 1421px) {
