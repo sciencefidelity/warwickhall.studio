@@ -16,10 +16,6 @@
     margin-left: 22.5%;
     display: inline-block;
     margin-top: -5.75rem;
-    @include b.mq(h) {
-      height: 15rem;
-      margin-top: -7.5rem;
-    }
     @include b.mq(f) {
       width: 88%;
       margin-left: 11.5%;
@@ -46,19 +42,23 @@
       height: 5.5rem;
       margin-top: -2.67rem;
     }
+    @media only screen and (min-width: 1421px) {
+      height: 15rem;
+      margin-top: -7.5rem;
+    }
   }
 
   .logo {
     letter-spacing: 0.15rem;
     padding: 0.75rem 1.5rem;
-    @include b.mq(h) {
-      padding: 0.75rem 2rem;
-    }
     @include b.mq(c) {
       padding: 0.375rem 1rem;
     }
     @include b.mq(b) {
       padding: 0.5rem 1rem;
+    }
+    @media only screen and (min-width: 1421px) {
+      padding: 0.75rem 2rem;
     }
   }
 
@@ -67,30 +67,27 @@
     font-weight: 700;
     text-align: right;
     color: var(--purple);
-    @include b.mq(h) {
+    @media only screen and (min-width: 1421px) {
       padding-top: 2.5rem;
     }
   }
 
   .main-container {
     margin: 0rem 16.5% 4rem 11.5%;
-    @include b.mq(h) {
-      margin: 0rem 20.5% 4rem 11.5%;
-    }
     @include b.mq(f) {
       margin: 0rem 11.5% 4rem 11.5%;
     }
     @include b.mq(c) {
       margin: 0rem 6% 4rem 6%;
     }
+    @media only screen and (min-width: 1421px) {
+      margin: 0rem 20.5% 4rem 11.5%;
+    }
   }
 
   .body-text {
     padding-right: 27%;
     padding-top: 3rem;
-    @include b.mq(h) {
-      padding-right: 23%;
-    }
     @include b.mq(g) {
       width: 100%;
     }
@@ -103,6 +100,9 @@
     }
     @include b.mq(b) {
       padding-top: 2rem;
+    }
+    @media only screen and (min-width: 1421px) {
+      padding-right: 23%;
     }
   }
 
