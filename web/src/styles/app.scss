@@ -49,9 +49,14 @@ body {
 p {
   font-family: 'GT Alpina', serif;
   line-height: 1.5;
+  @include b.mq(g) {
+    font-size: 1.4rem;
+  }
+  @include b.mq(e) {
+    font-size: 1.3rem;
+  }
   @include b.mq(b) {
-    font-size: 1rem;
-    line-height: 1.6;
+    font-size: 1.2rem;
   }
 }
 
@@ -59,51 +64,64 @@ h1 {
   margin: 0;
   font-family: 'GT Alpina', serif;
   font-size: 4.5rem;
-  line-height: 110.4px;
+  line-height: 83px;
   color: var(--yellow);
   @include b.mq(e) {
     font-size: 4rem;
+    line-height: 73px;
   }
   @include b.mq(d) {
     font-size: 3rem;
+    line-height: 56px;
   }
   @include b.mq(c) {
     font-size: 2.875rem;
+    line-height: 52px;
   }
   @include b.mq(b) {
     font-size: 2.4rem;
+    line-height: 44px;
   }
   @include b.mq(a) {
     font-size: 2rem;
+    line-height: 37px;
   }
   @media only screen and (min-width: 1421px) {
     font-size: 6rem;
+    line-height: 110.4px;
   }
 }
 
 h2 {
   font-size: 2.25rem;
-  line-height: 55.2px;
+  line-height: 41px;
   @include b.mq(f) {
     font-size: 2.25rem;
+    line-height: 41px;
   }
   @include b.mq(e) {
     font-size: 1.8rem;
+    line-height: 34px;
   }
   @include b.mq(d) {
     font-size: 1.5rem;
+    line-height: 28px;
   }
   @include b.mq(c) {
     font-size: 1.875rem;
+    line-height: 34px;
   }
   @include b.mq(b) {
     font-size: 1.65rem;
+    line-height: 30px;
   }
   @include b.mq(a) {
     font-size: 1.375rem;
+    line-height: 25px;
   }
   @media only screen and (min-width: 1421px) {
     font-size: 3rem;
+    line-height: 55.2px;
   }
 }
 
