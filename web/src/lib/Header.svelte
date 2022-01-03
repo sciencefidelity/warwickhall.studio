@@ -5,7 +5,7 @@
       <source srcset="../images/jess-studio.jpg" type="image/jpeg" />
       <img
         class="hero-image"
-        src="./assets/img/jess-studio.jpg"
+        src="../images/img/jess-studio.jpg"
         alt=""
         width="1200"
         height="800"
