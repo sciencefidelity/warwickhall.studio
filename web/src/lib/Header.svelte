@@ -6,7 +6,7 @@
       <img
         class="hero-image"
         src="../images/jess-studio.jpg"
-        alt=""
+        alt="An artist in the studio."
         width="1200"
         height="800"
       />
