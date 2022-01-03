@@ -1,13 +1,8 @@
-<script lang="ts">
-  import webp from "/assets/img/jess-studio.webp"
-  import jpeg from "/assets/img/jess-studio.jpg"
-</script>
-
 <header class="site-header">
   <div class="hero-container">
     <picture>
-      <source srcset={webp} type="image/webp" />
-      <source srcset={jpeg} type="image/jpeg" />
+      <source srcset="../images/jess-studio.webp" type="image/webp" />
+      <source srcset="../images/jess-studio.jpg" type="image/jpeg" />
       <img
         class="hero-image"
         src="./assets/img/jess-studio.jpg"
