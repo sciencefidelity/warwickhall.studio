@@ -1,6 +1,15 @@
 @use 'colors';
 @use 'breakpoints' as b;
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+}
+
 html {
   font-family:
     'Banana Grotesk',
@@ -12,23 +21,14 @@ html {
     Arial,
     'Noto Sans',
     sans-serif;
+  color: var(--light);
+  background-color: var(--dark);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0;
-  &::before,
-  &::after {
-    box-sizing: border-box;
-  }
-}
-
 body {
   font-size: 1.375rem;
-  color: var(--light);
-  background: var(--dark);
   @include b.mq(e) {
     font-size: 1.25rem;
   }
