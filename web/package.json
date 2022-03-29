@@ -1,61 +1,19 @@
 {
-  "name": "svelte-kit-template",
-  "version": "0.1.0",
-  "description": "TODO",
-  "author": "Matt Cook <matt@sciencefidelity.co.uk>",
-  "license": "MIT",
+  "name": "@example/starter",
+  "version": "0.0.1",
   "private": true,
-  "type": "module",
   "scripts": {
-    "dev": "svelte-kit dev --host",
-    "build": "svelte-kit build",
-    "package": "svelte-kit package",
-    "preview": "svelte-kit preview --host",
-    "clean": "rm -rf .svelte-kit build package",
-    "check": "svelte-check --tsconfig ./tsconfig.json",
-    "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
-    "lint": "concurrently 'yarn:lint:*'",
-    "lint:js": "eslint --ext .js,.ts,.svelte .",
-    "lint:format": "prettier --check --plugin-search-dir=. '**/*.{ts,js,json,md,yml,svelte}'",
-    "lint:styles": "stylelint '**/*.{svelte,scss}' --ignore-path .eslintignore",
-    "fix": "concurrently 'yarn:fix:*'",
-    "fix:js": "eslint --ext .js,.ts,.svelte --fix .",
-    "fix:format": "prettier --write --plugin-search-dir=. '**/*.{ts,js,json,md,yml,svelte}'",
-    "fix:styles": "stylelint --fix '**/*.{svelte,scss}' --ignore-path .eslintignore",
-    "test": "echo \"This template does not include a test runner.\" && exit 1"
-  },
-  "dependencies": {
-    "sanitize.css": "^13.0.0"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "clean": "rm -rf dist"
   },
   "devDependencies": {
-    "@sveltejs/kit": "^1.0.0-next.1",
-    "@typescript-eslint/eslint-plugin": "^5.16.0",
-    "@typescript-eslint/parser": "^5.16.0",
-    "concurrently": "^7.0.0",
-    "eslint": "^8.11.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-svelte3": "^3.4.1",
-    "postcss": "^8.4.12",
-    "postcss-html": "^1.3.0",
-    "postcss-scss": "^4.0.3",
-    "prettier": "^2.6.0",
-    "prettier-plugin-svelte": "^2.6.0",
-    "sass": "^1.49.9",
-    "stylelint": "^14.6.0",
-    "stylelint-config-html": "^1.0.0",
-    "stylelint-config-prettier": "^9.0.3",
-    "stylelint-config-recess-order": "^3.0.0",
-    "stylelint-config-recommended-scss": "^6.0.0",
-    "stylelint-config-sass-guidelines": "^9.0.1",
-    "stylelint-config-standard": "^25.0.0",
-    "stylelint-order": "^5.0.0",
-    "stylelint-scss": "^4.2.0",
-    "stylelint-selector-bem-pattern": "^2.1.1",
-    "svelte": "^3.46.4",
-    "svelte-check": "^2.4.6",
-    "svelte-preprocess": "^4.10.4",
-    "tslib": "^2.3.1",
-    "typescript": "^4.6.2"
+    "astro": "^0.25.4",
+    "sass": "^1.49.9"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }

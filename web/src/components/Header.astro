@@ -1,26 +1,19 @@
 <header class="site-header">
   <div class="hero-container">
     <picture>
-      <source srcset="../images/jess-studio.webp" type="image/webp" />
-      <source srcset="../images/jess-studio.jpg" type="image/jpeg" />
-      <img
-        class="hero-image"
-        src="../images/jess-studio.jpg"
-        alt="An artist in the studio."
-        width="1200"
-        height="800"
-      />
+      <source srcset="assets/img/jess-studio.webp" type="image/webp">
+      <source srcset="assets/img/jess-studio.jpg" type="image/jpeg">
+      <img class="hero-image" src="assets/img/jess-studio.jpg" alt="" width="1200" height="800" />
     </picture>
   </div>
 </header>
 
-<!-- prettier-ignore -->
 <style lang="scss">
   @use '../styles/breakpoints' as b;
 
   .hero-container {
-    height: 70vh;
     margin: 3rem 22% 0 0;
+    height: 70vh;
     @include b.mq(g) {
       margin: 3rem 11.5% 0 0;
     }
