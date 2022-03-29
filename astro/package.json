@@ -10,7 +10,7 @@
     "clean": "rm -rf dist"
   },
   "devDependencies": {
-    "astro": "^0.24.3",
+    "astro": "^0.25.4",
     "sass": "^1.49.9"
   },
   "dependencies": {
