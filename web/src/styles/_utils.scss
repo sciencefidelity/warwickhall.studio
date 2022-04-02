@@ -1,3 +1,11 @@
+@use 'breakpoints' as b;
+
+.hide {
+  @include b.mq(c) {
+    display: none;
+  }
+}
+
 .screen-reader-text {
   border: 0;
   clip: rect(1px, 1px, 1px, 1px);
