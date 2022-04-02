@@ -14,16 +14,16 @@ indent_style = space
 [*.html]
 indent_size = 2
 
-# Vue
-[*.astro]
+# Framework components
+[*.{astro,svelte,vue}]
 indent_size = 2
 
 # TypeScript, JavaScript
-[*.{ts,js}]
+[*.{ts,js,tsx,jsx}]
 indent_size = 2
 
-# scss
-[*.scss]
+# css, scss
+[*.{css,scss}]
 indent_size = 2
 
 # json
@@ -32,4 +32,8 @@ indent_size = 2
 
 # yml
 [*.yml]
+indent_size = 2
+
+# shell script
+[*.sh]
 indent_size = 2
