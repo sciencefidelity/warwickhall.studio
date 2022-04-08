@@ -1,19 +1,37 @@
 {
-  "name": "@example/starter",
-  "version": "0.0.1",
+  "name": "warwick-hall",
+  "version": "0.1.0",
+  "description": "Affordable art studios in cardiff",
+  "author": "Matt Cook <matt@sciencefidelity.co.uk>",
+  "license": "UNLICENSED",
   "private": true,
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "clean": "rm -rf dist"
+    "check": "astro check",
+    "lint": "concurrently 'yarn:lint:*'",
+    "lint:styles": "stylelint '**/*.{astro,scss}' --ignore-path .eslintignore",
+    "fix": "concurrently 'yarn:fix:*'",
+    "fix:styles": "stylelint --fix '**/*.{astro,scss}' --ignore-path .eslintignore"
   },
   "devDependencies": {
-    "astro": "^1.0.0-beta.4",
-    "sass": "^1.49.9"
-  },
-  "dependencies": {
-    "normalize.css": "^8.0.1"
+    "astro": "^1.0.0-beta.5",
+    "concurrently": "^7.1.0",
+    "postcss": "^8.4.12",
+    "postcss-html": "^1.3.0",
+    "postcss-scss": "^4.0.3",
+    "sanitize.css": "^13.0.0",
+    "sass": "^1.49.11",
+    "stylelint": "^14.6.1",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-recommended-scss": "^6.0.0",
+    "stylelint-config-sass-guidelines": "^9.0.1",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.2.0",
+    "stylelint-selector-bem-pattern": "^2.1.1"
   }
 }
