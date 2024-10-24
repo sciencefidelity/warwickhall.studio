@@ -2,6 +2,9 @@
 	import Footer from '$lib/Footer.svelte';
 	import Header from '$lib/Header.svelte';
 	import GlobalStyles from '$lib/styles/GlobalStyles.svelte';
+	import type { Snippet } from 'svelte';
+
+	const { children }: { children: Snippet } = $props();
 </script>
 
 <svelte:head>
@@ -41,6 +44,6 @@
 
 <GlobalStyles>
 	<Header />
-	<slot />
+	{@render children()}
 	<Footer />
 </GlobalStyles>
